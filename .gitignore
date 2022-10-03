@@ -1,0 +1,6 @@
+*.log
+*.db
+*.pkl
+Data/operalization
+Data/processed
+mlruns
