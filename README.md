@@ -12,7 +12,7 @@ Crie uma solução seguindo as orientações:
 Para começar o desenvolvimento, desenhe um diagrama que demonstra todas as etapas necessárias em um projeto de inteligência artificial desde a aquisição de dados, passando pela criação dos modelos, indo até a operação do modelo.'
 
 3. Descreva a importância de implementar pipelines de desenvolvimento e produção numa solução de aprendizado de máquinas. 
-### Resposta: pipelines são importantes entender melhor os detalhes de cada etapa, podendo utilizar diferentes tecnicas/processos/times em cada uma  
+### Resposta: para automatizar varios processos da entrega, modularizar o projeto, garantir q qualidade do modelo em produćão, pipelines são importantes entender melhor os detalhes de cada etapa, podendo utilizar diferentes tecnicas/processos/times em cada uma  
 
 4. Como as ferramentas Streamlit, MLFlow, PyCaret e Scikit-Learn auxiliam na construção dos pipelines descritos anteriormente? A resposta deve abranger os seguintes aspectos:
     a. Rastreamento de experimentos;
@@ -66,6 +66,7 @@ d. Registre a função custo "log loss" e F1_score para esse novo modelo
 8. Registre o modelo de classificação e o disponibilize através do MLFlow através de API. Selecione agora os dados da base de dados original onde shot_type for igual à 3PT Field Goal (será uma nova base de dados) e através da biblioteca requests, aplique o modelo treinado. Publique uma tabela com os resultados obtidos e indique o novo log loss e f1_score.
 
 a. O modelo é aderente a essa nova base? Justifique.
+### Resposta: Não é aderente, 2pts - precisao	0.606, 3pts - precisao	0.327
 
 b. Descreva como podemos monitorar a saúde do modelo no cenário com e sem a disponibilidade da variável resposta para o modelo em operação
 

@@ -9,7 +9,6 @@ fname = '../Data/dataset_kobe.csv'
 savefile = '../Data/model_kobe.pkl'
 
 
-############################################ LEITURA DOS DADOS
 print('=> Leitura dos dados')
 selected_features = {
     'minutes_remaining': int,
@@ -29,7 +28,6 @@ df_kobe['shot_made_flag'] = df_kobe['shot_made_flag'].astype(int)
 kobe_target_col = 'shot_made_flag'
 print(df_kobe.head())
 
-############################################ TREINO/TESTE E VALIDACAO
 results = {}
 for kobe_type in df_kobe['shot_type'].unique():
     print('=> Training for kobe:', kobe_type)
@@ -44,7 +42,6 @@ for kobe_type in df_kobe['shot_type'].unique():
     print('\t\tTreino:', xtrain.shape[0])
     print('\t\tTeste :', xtest.shape[0])
 
-    ############################################ GRID-SEARCH VALIDACAO CRUZADA
     print('\tTreinamento e hiperparametros')
     param_grid = {
         'max_depth': [3, 6],

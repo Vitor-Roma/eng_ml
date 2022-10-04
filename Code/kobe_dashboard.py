@@ -39,7 +39,6 @@ shot_type = '2PT Field Goal' if threePT_Field_Goal else '3PT Field Goal'
 def load_data(path):
     return joblib.load(path)
 
-#
 results = load_data(model_path)
 
 model = results[shot_type]['model']
